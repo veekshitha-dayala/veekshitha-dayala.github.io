@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dayala Veekshitha Priya | Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">Veekshitha</h2>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HOME -->
+  <header id="home">
+    <h1>Dayala Veekshitha Priya</h1>
+    <h2>Software Developer</h2>
+ 
+
+    <div class="social-links">
+      <a href="https://github.com/veekshitha-dayala" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/veekshitha-priya-dayala" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I am a recent Computer Science Engineering graduate with a strong foundation in Python, JavaScript, HTML, CSS, and SQL and 
+      I am highly interested in building real-world web applications, data-driven solutions, and AI-based systems. I have hands-on experience through academic projects and internships in full-stack development and data analysis. I enjoy learning new technologies and continuously improving my technical skills.
+  </section>
+
+  <!--  SKILLS -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Computer Vision</span>
+      <span>IoT</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h3>Academic Projects (Click to View)</h3>
+    <div class="projects">
+
+      <div class="card" onclick="toggleProject('p1')">
+        <h4>AI-Driven Real-Time Surveillance System</h4>
+        <p id="p1" class="project-info">
+          Real-time face detection system to automatically record events using Python, Computer Vision, PIL, and Custom Tinker.
+          <br><br>
+          <a href="https://github.com/veekshitha-dayala" target="_blank">🔗 View on GitHub</a>
+        </p>
+      </div>
+
+      <div class="card" onclick="toggleProject('p2')">
+        <h4>Personal Finance Manager</h4>
+        <p id="p2" class="project-info">
+          Web-based platform to manage daily expenses with real-time updates using HTML, CSS, and JavaScript.
+          <br><br>
+          <a href="https://github.com/veekshitha-dayala" target="_blank">🔗 View on GitHub</a>
+        </p>
+      </div>
+
+      <div class="card" onclick="toggleProject('p3')">
+        <h4>IoT-Based Inventory Management System</h4>
+        <p id="p3" class="project-info">
+          Real-time inventory tracking system using C++, NodeMCU, sensors, and ThingSpeak cloud API.
+          <br><br>
+          <a href="https://github.com/veekshitha-dayala" target="_blank">🔗 View on GitHub</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS-->
+<section id="internship-certificates">
+  <h3>Internships</h3>
+
+  <div class="projects">
+
+    <!-- ✅ EY INTERNSHIP -->
+    <div class="card">
+      <img src="internship-certificates/ey.jpg" alt="EY Internship Certificate">
+
+      <p><strong>Full Stack Web Development Intern – EY GDS</strong></p>
+
+      <p style="font-size:14px; font-weight:500; color:#555;">
+        Feb 2025 – Mar 2025 (AICTE, Edunet Foundation)
+      </p>
+
+      <p style="font-size:14px; color:#666;">
+        Worked on MERN stack based web application development and presented the project to industry experts.
+      </p>
+    </div>
+
+    <!-- ✅ ACCENTURE INTERNSHIP -->
+    <div class="card">
+      <img src="internship-certificates/accenture.jpg" alt="Accenture Internship Certificate">
+
+      <p><strong>Data Analyst Virtual Intern – Accenture</strong></p>
+
+      <p style="font-size:14px; font-weight:500; color:#555;">
+        Jan 2024 (Remote)
+      </p>
+
+      <p style="font-size:14px; color:#666;">
+        Performed SQL-based data audits, Python analysis, and Excel data visualization for business insights.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!--EDUCATION -->
+  <section id="education">
+    <h3>Education</h3>
+    <p><strong>B.Tech (CSE)</strong>, MLR Institute of Technology, Hyderabad – CGPA: 8.4 (2025)</p>
+    <p><strong>Intermediate</strong>, Narayana Junior College, Hyderabad – 90% (2021)</p>
+    <p><strong>Secondary Education</strong>, Presidency High School, Nizamabad – GPA: 9.7 (2019)</p>
+  </section>
+
+  <!-- CERTIFICATES (ONLY THESE 3 IN ONE FOLDER) -->
+  <section id="certificates">
+    <h3>Certificates</h3>
+    <div class="projects">
+
+      <div class="card">
+        <img src="certificates/pcap.jpg" alt="PCAP Certificate" style="width:100%; border-radius:10px;">
+        <p style="margin-top:10px;">PCAP – Certified Associate in Python Programming (Cisco)</p>
+      </div>
+
+      <div class="card">
+        <img src="certificates/sql.jpg" alt="PCAP Certificate" style="width:100%; border-radius:10px;">
+        <p style="margin-top:10px;">SQL Certification – NxtWave</p>
+      </div>
+
+      <div class="card">
+        <img src="certificates/html,css.jpg" alt="PCAP Certificate" style="width:100%; border-radius:10px;">
+        <p style="margin-top:10px;">HTML, CSS Certification – NxtWave</p>
+      </div>
+
+      <div class="card">
+        <img src="certificates/js.jpg" alt="PCAP Certificate" style="width:100%; border-radius:10px;">
+        <p style="margin-top:3px;">JavaScript Certification – NxtWave</p>
+      </div>
+
+      <div class="card">
+        <img src="certificates/assic.jpg" alt="PCAP Certificate" style="width:100%; border-radius:10px;">
+        <p>3rd ASSIC 2025 Certification – IEEE</p>
+        <a href="https://ieeexplore.ieee.org/document/11158387">IEEE</a>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>Email: veekshithapriya2284@gmail.com</p>
+    <p>Phone: 7013113959</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Dayala Veekshitha Priya | Software Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
